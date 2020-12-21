@@ -1,0 +1,41 @@
+// Main CSS File
+// abstracts CSS Files
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+@import 'abstracts/variables';
+// abstracts CSS Files
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+// components CSS Files
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/cover';
+@import 'components/dropdown';
+// layout CSS Files
+@import 'layout/footer';
+@import 'layout/forms';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/sidebar';
+@import 'layout/connect-us';
+@import 'layout/modal';
+// pages CSS Files home page
+@import 'pages/home/ready_to_go';
+@import 'pages/home/our_additional';
+@import 'pages/home/slider_list';
+@import 'pages/home/app-site';
+@import 'pages/home/business-website';
+@import 'pages/home/digital-content';
+@import 'pages/home/head_hero';
+ 
+
+
+// themes CSS Files
+@import 'themes/admin';
+@import 'themes/theme';
+// vendor CSS Files
+@import 'vendor/bootstrap';
+@import 'vendor/jquery-ui';

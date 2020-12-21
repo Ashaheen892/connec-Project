@@ -1,0 +1,301 @@
+/*=============================================
+=            Section digital-content            =
+=============================================*/
+
+.digital-content {
+  background-color: $color-white;
+  padding: 40px 80px;
+  @media (max-width: 991px) {
+    text-align: center;
+    padding: 20px 0;
+  }
+  @media (max-width: 768px) {
+    padding: 20px 0;
+  }
+  .container-fluid {
+    .row {
+      height: 100%;
+    }
+  }
+  h2 {
+    color: $color-black;
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    @media (max-width: 1200px) {
+        font-size: 28px;
+    }
+    @media (max-width: 991px) {
+        font-size: 26px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    @media (max-width: 768px) {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+  .digital-content-data {
+    height: 100%;
+    overflow: hidden;
+    min-height: 50vh;
+    @media (max-width: 1200px) {
+        min-height: auto;
+    }
+    .card {
+      border: none;
+      border: none;
+
+      .card-header {
+        background: none;
+        border: none;
+        padding: 0;
+        margin-bottom: 0;
+        button {
+          color: $color-black;
+          text-decoration: none;
+          font-family: Montserrat;
+          font-size: 20px;
+          font-weight: bold;
+          background: none;
+          outline: none;
+          display: none;
+          @media (max-width: 991px) {
+            display: block;
+            font-size: 18px;
+          } 
+          @media (max-width: 500px) {
+            display: block;
+            width: 100%;
+            font-size: 16px;
+          }
+        }
+      }
+      .card-body {
+        height: 100%;
+        padding: 0;
+        .digital-slider-1 {
+            width: 80%;
+            margin: 0 auto;
+            @media (max-width: 1200px) {
+              width: 100%;
+            }
+        }
+        .slick-slide {
+          img {
+            margin: 0 auto;
+            width: 100%;
+            @media (max-width: 991px) {
+                width: 50%;
+               } 
+               @media (max-width: 991px) {
+                width: 60%;
+               }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*=====  End of Section digital-content  ======*/
+
+/*=============================================
+=            Section digital-content-Control            =
+=============================================*/
+
+.digital-content-Control {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+
+  button {
+    color: $color-black;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: bold;
+    background: none !important;
+    outline: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    &:hover,
+    &.collapsed,
+    &.focus,
+    &:focus {
+      text-decoration: none !important;
+      color: $color-black !important;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+}
+
+/*=====  End of Section digital-content-Control  ======*/
+
+/*=============================================
+=            Section animision_img_all            =
+=============================================*/
+
+.animision_img_all {
+  position: relative;
+  height: 80vh;
+  @media (max-width: 1200px) {
+    height: 70vh;
+  }
+    @media (max-width: 500px) {
+    height: 40vh;
+  }
+&:hover{
+    .animision_img{
+        animation: none !important;
+    }
+}
+  .animision_img {
+    position: absolute;
+    height: 100%;
+    padding: 10px;
+
+    button{
+        padding: 10px;
+        border: 0;
+        margin-bottom: 10px;
+        color: $color-white;
+        font-family: Montserrat;
+        font-size: 14px;
+        @media (max-width: 1200px) {
+            font-size: 12px;
+            padding: 5px;
+            margin-bottom: 5px;
+          }
+        @media (max-width: 500px) {
+            font-size: 12px;
+            padding: 5px;
+            margin-bottom: 5px;
+          }
+    }
+    &:nth-child(1) {
+      width: 35%;
+      height: 50%;
+      left: 0;
+      top: 0;
+      animation: border-1 10s infinite;
+      button{
+          background-color: #5B728F;
+      }
+    }
+    &:nth-child(2) {
+      width: 35%;
+      height: 50%;
+      left: 0;
+      top: 50%;
+      animation: border-2 10s infinite;
+      button{
+        background-color: #15355E;
+    }
+    }
+    &:nth-child(3) {
+      width: 65%;
+      height: 100%;
+      left: 25%;
+      top: 0;
+      animation: border-3 10s infinite;
+      button{
+        background-color: #5B8F62;
+    }
+    }
+    .animision_img_data{
+        height: calc(100% - 50px);
+        img {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+          }
+    }
+  
+  }
+}
+
+/*=====  End of Section animision_img_all  ======*/
+
+/*=============================================
+=            Section keyframes            =
+=============================================*/
+
+@keyframes border-1 {
+    0% {
+     order: 1;
+     left: 0;
+     top: 0;
+     width: 35%;
+     height: 50%;
+    }
+    50% {
+      order: 2;
+      left: 0;
+      top: 50%;
+      width:35%;
+      height: 50%;
+    }
+    100% {
+      order: 3;
+      left: 35%;
+      top: 0;
+      width: 65%;
+      height: 100%;
+    }
+  }
+  @keyframes border-2 {
+    0% {
+        order: 2;
+        left: 0;
+        top: 50%;
+        width: 35%;
+        height: 50%;
+    }
+    50% {
+        order: 3;
+        left:35%;
+        top: 0;
+        width: 65%;
+        height: 100%;
+    }
+    100% {
+        order: 1;
+        left: 0;
+        top: 0;
+        width: 35%;
+        height: 50%;
+    }
+  } 
+   @keyframes border-3 {
+    0% {
+        order: 3;
+        left: 35%;
+        top: 0;
+        width: 65%;
+        height: 100%;
+    }
+    50% {
+        order: 1;
+        left: 0;
+        top: 0;
+        width: 35%;
+        height: 50%;
+    }
+    100% {
+        order: 2;
+        left: 0;
+        top: 50%;
+        width: 35%;
+        height: 50%;
+    }
+  }
+
+/*=====  End of Section keyframes  ======*/

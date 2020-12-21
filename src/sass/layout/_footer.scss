@@ -1,0 +1,207 @@
+/*=============================================
+=            Section footer            =
+=============================================*/
+
+.footer {
+    background-color: $color-black;
+    padding: 40px 0;
+    position: relative;
+    @media (max-width: 991px) {
+        .col-lg-2 {
+            display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        padding: 20px 0;
+    }
+    .Languages_div_all {
+        .Languages_link {
+            background-color: $color-cacao;
+            color: $color-white;
+            font-family: Montserrat;
+            text-transform: uppercase;
+            padding: 15px;
+            font-size: 14px;
+            display: block;
+            position: relative;
+            font-weight: bold;
+            @media (max-width: 1200px) {
+                font-size: 12px;
+            }
+            .icon {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+    .Languages_div {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: $transitionAll;
+        background-color: rgba($color-black, 0.8);
+        text-align: center;
+        .Languages_icon {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            color: $color-white;
+            font-size: 30px;
+        }
+        .Languages_list_all {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            .Languages_list {
+                li {
+                    display: block;
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .Languages_list_link {
+                        color: $color-white;
+                        font-family: Segoe UI Regular;
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        transition: $transitionAll;
+                        position: relative;
+                        &:hover {
+                            &::after {
+                                opacity: 1;
+                                width: 100%;
+                                left: 0;
+                            }
+                        }
+                        &::after {
+                            content: " ";
+                            position: absolute;
+                            width: 0;
+                            left: 50%;
+                            bottom: -5px;
+                            height: 2px;
+                            background-color: $color-white;
+                            opacity: 0;
+                            transition: $transitionAll;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Languages_open {
+        display: block;
+    }
+}
+
+
+/*=====  End of Section footer  ======*/
+
+
+/*=============================================
+=            Section footer_links_all            =
+=============================================*/
+
+.footer_links_all {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+    .footer_links {
+        @media (max-width: 768px) {
+            padding: 0 5px;
+            text-align: center;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        h3 {
+            color: $color-white;
+            font-family: Segoe UI;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: bold;
+            @media (max-width: 1199.98px) {
+                font-size: 16px;
+            }
+        }
+        ul {
+            li {
+                a {
+                    color: $color-gray;
+                    font-family: Segoe UI Regular;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    transition: $transitionAll;
+                    &:hover {
+                        color: $color-white;
+                    }
+                    @media (max-width: 1199.98px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*=====  End of Section footer_links_all  ======*/
+
+
+/*=============================================
+=            Section footer-small            =
+=============================================*/
+
+.footer-small {
+    text-align: center;
+    background-color: $color-black;
+    padding: 12px 0;
+    p {
+        margin: 0;
+        font-family: Montserrat;
+        font-size: 14px;
+        text-transform: capitalize;
+        #copyright {
+            font-size: 14px;
+            color: $color-white;
+            font-family: Montserrat;
+            @media (max-width: 500px) {
+                font-size: 10px;
+            }
+            a {
+                font-size: 14px;
+                font-family: Montserrat;
+                color: $color-white;
+                transition: $transitionAll;
+                &:hover {
+                    color: $color-gold;
+                }
+                @media (max-width: 500px) {
+                    font-size: 10px;
+                }
+            }
+            span {
+                font-family: Montserrat;
+                @media (max-width: 768px) {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+
+/*=====  End of Section footer-small  ======*/

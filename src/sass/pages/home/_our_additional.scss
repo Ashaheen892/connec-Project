@@ -1,0 +1,170 @@
+/*=============================================
+=            Section our_additional            =
+=============================================*/
+
+.our_additional {
+    background-color: $color-black;
+    padding: 40px 0;
+    position: relative;
+    @media (max-width: 768px) {
+        padding: 20px 0;
+    }
+    h2 {
+        color: $color-white;
+        font-family: Segoe UI;
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-bottom: 40px;
+        @media (max-width: 1200px) {
+            font-size: 28px;
+        }
+        @media (max-width: 991px) {
+            font-size: 26px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+/*=====  End of Section our_additional  ======*/
+
+
+/*=============================================
+=            Section our_additional_list            =
+=============================================*/
+
+.our_additional_list {
+    @media (max-width: 991px) {
+        margin-bottom: 30px;
+    }
+ 
+    .additional_list_itme {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .list_itme_img {
+            width: 30%;
+            img {
+                width: 100%;
+            }
+        }
+        .list_itme_text {
+            padding: 0 0 0 10px;
+            width: 70%;
+            @media (max-width: 991px) {
+             display: flex;
+             justify-content:center;
+             text-align: center;
+            }
+            h5 {
+                font-size: 24px;
+                font-family: Montserrat;
+                color: $color-white;
+                text-transform: capitalize;
+                @media (max-width: 1200px) {
+                    font-size: 20px;
+                } 
+                @media (max-width: 991px) {
+                    font-size: 18px;
+                }
+                @media (max-width: 768px) {
+                    font-size:16px;
+                }
+            }
+        }
+    }
+}
+
+
+/*=====  End of Section our_additional_list  ======*/
+
+
+/*=============================================
+=            Section our_additional_data            =
+=============================================*/
+
+.our_additional_data {
+    .additional_data_img {
+        margin-bottom: 30px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .additional_data_accordion {
+        .card {
+            background: none;
+            .card-body {
+                p {
+                    font-family: Segoe UI;
+                    font-size: 24px;
+                    color: $color-white;
+                    margin-bottom: 30px;
+                    @media (max-width: 991px) {
+                      font-size: 20px;
+                      margin-bottom: 20px;
+                    }
+                    @media (max-width: 500px) {
+                      font-size: 18px;
+                      margin-bottom: 15px;
+                    }}
+            }
+            .mb-0 {
+                border-bottom: 1px solid $color-white !important;
+            }
+            .card-header {
+                padding: 0;
+                border: none !important;
+                background: none;
+                .btn-link {
+                    width: 100%;
+                    text-align: left;
+                    color: $color-white;
+                    font-size: 24px;
+                    font-family: Montserrat;
+                    text-decoration: none;
+                    border: none !important;
+                    border-bottom: 1px solid $color-white !important;
+                    padding: 15px 0;
+                    position: relative;
+                    @media (max-width: 991px) {
+                        font-size: 18px;
+                    }
+                    @media (max-width: 768px) {
+                        font-size:16px;
+                    }
+                    &.collapsed:after {
+                        content: '\002B';
+                        color: $color-white;
+                        font-weight: bold;
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        font-size: 16px;
+                    }
+                    &:after {
+                        content: "\2212";
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*=====  End of Section our_additional_data  ======*/

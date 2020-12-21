@@ -1,0 +1,212 @@
+
+
+/*=============================================
+=            Section developers_from            =
+=============================================*/
+
+.developers_from{
+    background-color: $color-white;
+    padding: 40px 0;
+    @media (max-width: 991px) {
+        text-align: center;
+    }
+    @media (max-width: 768px) {
+        padding: 20px 0;
+    }
+    .developers_from_text{
+        color: $color-black;
+        h2{
+            font-family: Montserrat;
+            font-size: 24px;
+            @media (max-width: 991px) {
+                font-size: 20px;
+            }
+            @media (max-width: 768px) {
+                font-size:18px;
+            }
+        }
+        p{
+            font-family: Segoe UI Regular;
+            font-size:18px ;
+            @media (max-width: 991px) {
+                font-size: 16px;
+            }
+      
+          
+        }
+        a{
+            font-family: Segoe UI;
+            font-size: 18px;
+            font-weight: bold;
+            color: $color-black;
+            @media (max-width: 991px) {
+                font-size: 16px;
+            }
+            @media (max-width: 768px) {
+                font-size:14px;
+            }
+        }
+    }
+}
+
+/*=====  End of Section developers_from  ======*/
+
+
+
+
+/*=============================================
+=            Section slider_list            =
+=============================================*/
+
+.slider_list {
+    background-color: $color-pink;
+    padding: 100px 0;
+    position: relative;
+    @media (max-width: 768px) {
+        padding: 20px 0;
+        .col-4{
+            padding-right: 0;
+        }
+    }
+    .slider_one_all {
+        .dots-test {
+            li {
+                display: inline-block;
+                padding-right: 5px;
+                &:last-child {
+                    padding-right: 0;
+                }
+                a {
+                    width: 12px;
+                    height: 12px;
+                    background-color: $color-white;
+                    display: block;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .slider_control {
+        height: 100%;
+        .dots-test {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            li {
+                a {
+                    color: $color-white;
+                    font-size: 24px;
+                    cursor: pointer;
+                    width: auto;
+                    position: relative;
+                    font-family: Montserrat;
+                    overflow: hidden;
+                    background-color: $color-pink;
+                    @media (max-width: 991px) {
+                        font-size: 16px;
+                    }
+                    @media (max-width: 768px) {
+                        font-size:14px;
+                    }
+                     @media (max-width: 500px) {
+                        font-size:12px;
+                    }
+                    &::after {
+                        content: " ";
+                        background-color: $color-white;
+                        width: 100%;
+                        position: absolute;
+                        left: 0;
+                        bottom: -100%;
+                        height: 2px;
+                        transition: $transitionAll;
+                        opacity: 0;
+                    }
+                }
+                &.slick-active {
+                    a {
+                        &::after {
+                            width: 100%;
+                            bottom: 0;
+                            left: 0;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*=====  End of Section slider_list  ======*/
+
+
+/*=============================================
+=            Section slider_itme_data            =
+=============================================*/
+
+.slider_one_itmes {
+    background-color: $color-white;
+    padding: 20px;
+    @media (max-width: 991px) {
+        padding: 15px;
+    }
+    @media (max-width: 768px) {
+       padding: 10px;
+    }
+    .slider_itme_data {
+        display: flex;
+        align-items: center;
+        .slider_one_img {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+        .slider_one_text {
+            text-align: center;
+            width: 50%;
+         
+            @media (max-width: 768px) {
+                font-size:14px;
+                padding: 5px;
+            }
+            h4 {
+                font-family: Segoe UI;
+                color: $color-black;
+                font-size: 30px;
+                @media (max-width: 991px) {
+                    font-size: 24px;
+                }
+                @media (max-width: 768px) {
+                    font-size:18px;
+                }
+            }
+        }
+    }
+    &:nth-child(odd) {
+        .slider_itme_data {
+            .slider_one_img {
+                order: 1;
+            }
+            .slider_one_text {
+                order: 2;
+            }
+        }
+    }
+    &:nth-child(even) {
+        .slider_itme_data {
+            .slider_one_img {
+                order: 2;
+            }
+            .slider_one_text {
+                order: 1;
+            }
+        }
+    }
+}
+
+
+/*=====  End of Section slider_one_all  ======*/
