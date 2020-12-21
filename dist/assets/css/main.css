@@ -1865,7 +1865,7 @@ input:hover {
     .animision_img_all .animision_img:nth-child(3) {
       width: 65%;
       height: 100%;
-      left: 25%;
+      left: 35%;
       top: 0;
       animation: border-3 10s infinite; }
       .animision_img_all .animision_img:nth-child(3) button {
