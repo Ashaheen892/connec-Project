@@ -48,7 +48,6 @@ body {
   .landscape_div .landscape_div_svg {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     background-color: #ffffff; }
     .landscape_div img #for_better_experience_please_change_to_portrait_mood,
     .landscape_div .landscape_div_svg #for_better_experience_please_change_to_portrait_mood {
@@ -112,76 +111,6 @@ input:hover {
   @media (max-width: 768px) {
     .footer {
       padding: 20px 0; } }
-  .footer .Languages_div_all .Languages_link {
-    background-color: #5d5252;
-    color: #ffffff;
-    font-family: Montserrat;
-    text-transform: uppercase;
-    padding: 15px;
-    font-size: 14px;
-    display: block;
-    position: relative;
-    font-weight: bold; }
-    @media (max-width: 1200px) {
-      .footer .Languages_div_all .Languages_link {
-        font-size: 12px; } }
-    .footer .Languages_div_all .Languages_link .icon {
-      position: absolute;
-      left: 10px;
-      top: 50%;
-      transform: translate(0, -50%); }
-  .footer .Languages_div {
-    display: none;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: center; }
-    .footer .Languages_div .Languages_icon {
-      position: absolute;
-      left: 30px;
-      top: 30px;
-      color: #ffffff;
-      font-size: 30px; }
-    .footer .Languages_div .Languages_list_all {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      width: 100%;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center; }
-      .footer .Languages_div .Languages_list_all .Languages_list li {
-        display: block;
-        margin-bottom: 10px; }
-        .footer .Languages_div .Languages_list_all .Languages_list li:last-child {
-          margin-bottom: 0; }
-        .footer .Languages_div .Languages_list_all .Languages_list li .Languages_list_link {
-          color: #ffffff;
-          font-family: Segoe UI Regular;
-          text-transform: uppercase;
-          font-size: 18px;
-          transition: all 0.5s ease-in-out;
-          position: relative; }
-          .footer .Languages_div .Languages_list_all .Languages_list li .Languages_list_link:hover::after {
-            opacity: 1;
-            width: 100%;
-            right: 0; }
-          .footer .Languages_div .Languages_list_all .Languages_list li .Languages_list_link::after {
-            content: " ";
-            position: absolute;
-            width: 0;
-            right: 50%;
-            bottom: -5px;
-            height: 2px;
-            background-color: #ffffff;
-            opacity: 0;
-            transition: all 0.5s ease-in-out; }
-  .footer .Languages_open {
-    display: block; }
 
 /*=====  End of Section footer  ======*/
 /*=============================================
@@ -259,6 +188,77 @@ input:hover {
             display: block; } }
 
 /*=====  End of Section footer-small  ======*/
+/*=============================================
+=            Section modal            =
+=============================================*/
+.Languages_link {
+  background-color: #5d5252;
+  color: #ffffff;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 14px;
+  display: block;
+  position: relative;
+  font-weight: bold;
+  width: 100%;
+  border: none !important;
+  border-radius: 0 !important;
+  outline: none !important;
+  box-shadow: none !important; }
+  @media (max-width: 1200px) {
+    .Languages_link {
+      font-size: 12px; } }
+  .Languages_link .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%); }
+
+.modal .icon {
+  color: #ffffff;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  cursor: pointer; }
+
+.modal .modal-dialog {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) !important; }
+  .modal .modal-dialog .modal-content {
+    background: none;
+    text-align: center;
+    border: none !important; }
+    .modal .modal-dialog .modal-content ul li {
+      display: block;
+      margin-bottom: 10px; }
+      .modal .modal-dialog .modal-content ul li:last-child {
+        margin-bottom: 0; }
+      .modal .modal-dialog .modal-content ul li .Languages_list_link {
+        color: #ffffff;
+        font-family: Segoe UI Regular;
+        text-transform: uppercase;
+        font-size: 18px;
+        transition: all 0.5s ease-in-out;
+        position: relative; }
+        .modal .modal-dialog .modal-content ul li .Languages_list_link:hover::after {
+          opacity: 1;
+          width: 100%;
+          right: 0; }
+        .modal .modal-dialog .modal-content ul li .Languages_list_link::after {
+          content: " ";
+          position: absolute;
+          width: 0;
+          right: 50%;
+          bottom: -5px;
+          height: 2px;
+          background-color: #ffffff;
+          opacity: 0;
+          transition: all 0.5s ease-in-out; }
+
+/*=====  End of Section modal  ======*/
 /*=============================================
 =            Section nav_bar            =
 =============================================*/
@@ -391,6 +391,8 @@ input:hover {
     justify-content: center;
     width: 100%;
     height: 100%; }
+  .nav_bar_center_small ul .dropdown-menu {
+    display: none; }
   .nav_bar_center_small ul .dropdown:hover .dropdown-menu {
     display: block; }
   .nav_bar_center_small ul li .nav-link {
@@ -421,6 +423,9 @@ input:hover {
 
 .bar_toggle-opne {
   right: 0 !important; }
+
+.dropdown-menu-show {
+  display: none !important; }
 
 /*=====  End of Section nav_bar_center_small  ======*/
 /*=============================================
@@ -465,7 +470,16 @@ input:hover {
       font-size: 14px;
       display: block;
       position: relative;
-      font-weight: bold; }
+      font-weight: bold;
+      width: 100%;
+      border: none !important;
+      border-radius: none !important;
+      outline: none !important;
+      width: 100%;
+      border: none !important;
+      border-radius: 0 !important;
+      outline: none !important;
+      box-shadow: none !important; }
       @media (max-width: 1200px) {
         .ready_to_go .ready_go_text .Languages_div_all .Languages_link {
           font-size: 12px; } }
@@ -1445,6 +1459,8 @@ input:hover {
   .slider_list .slider_one_all .dots-test li {
     display: inline-block;
     padding-left: 5px; }
+    .slider_list .slider_one_all .dots-test li.active a {
+      background-color: #000; }
     .slider_list .slider_one_all .dots-test li:last-child {
       padding-left: 0; }
     .slider_list .slider_one_all .dots-test li a {
@@ -1950,16 +1966,31 @@ input:hover {
   position: relative; }
   @media (max-width: 991px) {
     .head_hero {
-      height: 75vh; } }
+      height: 60vh; } }
   @media (max-width: 500px) {
     .head_hero {
-      height: 60vh; } }
+      height: 45vh; } }
   .head_hero .head-hero-bac {
     position: absolute;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%; }
+  .head_hero .web-hero-bac {
+    display: block; }
+    @media (max-width: 991px) {
+      .head_hero .web-hero-bac {
+        display: none; } }
+  .head_hero .ipad-hero-bac {
+    display: none; }
+    @media (max-width: 991px) {
+      .head_hero .ipad-hero-bac {
+        display: block; } }
+  .head_hero .phone-hero-bac {
+    display: none; }
+    @media (max-width: 500px) {
+      .head_hero .phone-hero-bac {
+        display: block; } }
   .head_hero .head_hero_text_all {
     width: 100%;
     height: 100%;
@@ -1969,7 +2000,6 @@ input:hover {
     align-items: center; }
     @media (max-width: 991px) {
       .head_hero .head_hero_text_all {
-        text-align: center;
         padding: 15px; } }
     .head_hero .head_hero_text_all h1 {
       font-family: Montserrat;
@@ -1983,21 +2013,23 @@ input:hover {
           margin-bottom: 20px; } }
       @media (max-width: 500px) {
         .head_hero .head_hero_text_all h1 {
-          font-size: 22px;
-          margin-bottom: 15px; } }
+          font-size: 18px;
+          margin-bottom: 5px; } }
     .head_hero .head_hero_text_all p {
       font-family: Segoe UI;
       font-size: 24px;
       color: #ffffff;
       margin-bottom: 30px; }
+      .head_hero .head_hero_text_all p:last-child {
+        margin-bottom: 15px !important; }
       @media (max-width: 991px) {
         .head_hero .head_hero_text_all p {
           font-size: 20px;
           margin-bottom: 20px; } }
       @media (max-width: 500px) {
         .head_hero .head_hero_text_all p {
-          font-size: 18px;
-          margin-bottom: 15px; } }
+          font-size: 14px;
+          margin-bottom: 2px; } }
     .head_hero .head_hero_text_all a {
       transition: all 0.5s ease-in-out;
       color: #000;
@@ -2014,5 +2046,11 @@ input:hover {
         .head_hero .head_hero_text_all a {
           font-size: 14px;
           padding: 10px; } }
+      @media (max-width: 500px) {
+        .head_hero .head_hero_text_all a {
+          margin-top: 10px;
+          display: block;
+          width: 40%;
+          text-align: center; } }
 
 /*=====  End of Section head_hero  ======*/

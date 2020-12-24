@@ -161,6 +161,9 @@
   }
 
   ul {
+    .dropdown-menu {
+      display: none;
+    }
     .dropdown:hover .dropdown-menu {
       display: block;
     }
@@ -199,5 +202,8 @@
 }
 .bar_toggle-opne {
   left: 0 !important;
+}
+.dropdown-menu-show{
+  display: none !important;
 }
 /*=====  End of Section nav_bar_center_small  ======*/

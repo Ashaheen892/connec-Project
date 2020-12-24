@@ -73,6 +73,11 @@
             li {
                 display: inline-block;
                 padding-right: 5px;
+                &.active{
+                    a{
+                        background-color: $color-black;
+                    }
+                }
                 &:last-child {
                     padding-right: 0;
                 }

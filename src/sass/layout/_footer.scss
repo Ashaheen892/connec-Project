@@ -14,98 +14,9 @@
     @media (max-width: 768px) {
         padding: 20px 0;
     }
-    .Languages_div_all {
-        .Languages_link {
-            background-color: $color-cacao;
-            color: $color-white;
-            font-family: Montserrat;
-            text-transform: uppercase;
-            padding: 15px;
-            font-size: 14px;
-            display: block;
-            position: relative;
-            font-weight: bold;
-            @media (max-width: 1200px) {
-                font-size: 12px;
-            }
-            .icon {
-                position: absolute;
-                right: 10px;
-                top: 50%;
-                transform: translate(0, -50%);
-            }
-        }
-    }
-    .Languages_div {
-        display: none;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        transition: $transitionAll;
-        background-color: rgba($color-black, 0.8);
-        text-align: center;
-        .Languages_icon {
-            position: absolute;
-            right: 30px;
-            top: 30px;
-            color: $color-white;
-            font-size: 30px;
-        }
-        .Languages_list_all {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            width: 100%;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            .Languages_list {
-                li {
-                    display: block;
-                    margin-bottom: 10px;
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                    .Languages_list_link {
-                        color: $color-white;
-                        font-family: Segoe UI Regular;
-                        text-transform: uppercase;
-                        font-size: 18px;
-                        transition: $transitionAll;
-                        position: relative;
-                        &:hover {
-                            &::after {
-                                opacity: 1;
-                                width: 100%;
-                                left: 0;
-                            }
-                        }
-                        &::after {
-                            content: " ";
-                            position: absolute;
-                            width: 0;
-                            left: 50%;
-                            bottom: -5px;
-                            height: 2px;
-                            background-color: $color-white;
-                            opacity: 0;
-                            transition: $transitionAll;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .Languages_open {
-        display: block;
-    }
 }
 
-
 /*=====  End of Section footer  ======*/
-
 
 /*=============================================
 =            Section footer_links_all            =
@@ -157,9 +68,7 @@
     }
 }
 
-
 /*=====  End of Section footer_links_all  ======*/
-
 
 /*=============================================
 =            Section footer-small            =
@@ -203,5 +112,92 @@
     }
 }
 
-
 /*=====  End of Section footer-small  ======*/
+
+/*=============================================
+=            Section modal            =
+=============================================*/
+
+.Languages_link {
+    background-color: $color-cacao;
+    color: $color-white;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    width: 100%;
+    border: none !important;
+    border-radius: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    @media (max-width: 1200px) {
+        font-size: 12px;
+    }
+    .icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+
+.modal {
+    .icon{
+        color: $color-white;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        cursor: pointer;
+    }
+    .modal-dialog {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) !important;
+        .modal-content {
+            background: none;
+            text-align: center;
+            border: none !important;
+            ul {
+                li {
+                    display: block;
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .Languages_list_link {
+                        color: $color-white;
+                        font-family: Segoe UI Regular;
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        transition: $transitionAll;
+                        position: relative;
+                        &:hover {
+                            &::after {
+                                opacity: 1;
+                                width: 100%;
+                                left: 0;
+                            }
+                        }
+                        &::after {
+                            content: " ";
+                            position: absolute;
+                            width: 0;
+                            left: 50%;
+                            bottom: -5px;
+                            height: 2px;
+                            background-color: $color-white;
+                            opacity: 0;
+                            transition: $transitionAll;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=====  End of Section modal  ======*/
