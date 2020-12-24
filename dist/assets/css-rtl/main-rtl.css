@@ -2019,7 +2019,7 @@ input:hover {
       font-family: Segoe UI;
       font-size: 24px;
       color: #ffffff;
-      margin-bottom: 30px; }
+      margin-bottom: 0; }
       .head_hero .head_hero_text_all p:last-child {
         margin-bottom: 15px !important; }
       @media (max-width: 991px) {
@@ -2036,7 +2036,8 @@ input:hover {
       background-color: #ffffff;
       font-size: 18px;
       text-transform: capitalize;
-      padding: 15px 25px; }
+      padding: 15px 25px;
+      margin-top: 10px; }
       .head_hero .head_hero_text_all a:hover {
         background-color: #FFFAFA; }
       @media (max-width: 1200px) {

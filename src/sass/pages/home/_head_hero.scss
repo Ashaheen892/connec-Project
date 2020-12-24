@@ -67,7 +67,7 @@
       font-family: Segoe UI;
       font-size: 24px;
       color: $color-white;
-      margin-bottom: 30px;
+      margin-bottom: 0;
       &:last-child {
         margin-bottom: 15px !important;
       }
@@ -87,6 +87,7 @@
       font-size: 18px;
       text-transform: capitalize;
       padding: 15px 25px;
+      margin-top: 10px;
       &:hover {
         background-color: $color-white-2;
       }
